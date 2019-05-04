@@ -1,0 +1,88 @@
+#header {
+    background-color: green;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0 15px 15px;
+    padding: 30px 20px;
+    width: 220px;
+}
+
+#instructions {
+    background-color: goldenrod;
+    color: #000;
+    font-size: 18px;
+    margin: 15px 0 15px 15px;
+    padding: 30px 20px;
+    width: 500px;
+}
+
+#goalScore {
+    background-color: rgb(99, 67, 0);
+    color: #fff;
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0 15px 15px;
+    padding: 30px 20px;
+}
+
+#record {
+    background-color:  rgb(156, 26, 3);
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 0 15px 15px;
+    padding: 21px 20px;
+    width: 100px;
+}
+
+#totalScore {
+    background-color:  rgb(22, 1, 99);
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 20px 20px;
+    width: 350px;
+}
+
+
+
+.red-button img {
+    height: 150px;
+    width: 85px;
+}
+
+.blue-button img {
+    height: 150px;
+    width: 85px;
+}
+
+.yellow-button img{
+    height: 150px;
+    width: 85px;
+}
+
+.green-button img {
+    height: 150px;
+    width: 85px;
+}
+
+.btn {
+    background-color: #4aaaa5;
+    border: none;
+    font-size: 0;
+}
+
+#btn-container {
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+
+
+body {
+    background-color: #4aaaa5;
+}
