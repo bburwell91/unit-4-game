@@ -1,6 +1,6 @@
 # Legend of Zelda Rupee Collector
 
-Legend of Zelda themed game randomizing game.
+Legend of Zelda themed randomizing game.
 
 Technologies used:
 - HTML
