@@ -1,4 +1,4 @@
-# unit-4-game
+# Legend of Zelda Rupee Collector
 
 Legend of Zelda themed game randomizing game.
 
