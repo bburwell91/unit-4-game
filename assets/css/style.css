@@ -1,76 +1,71 @@
+#container {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 25px;
+    width: 70%;
+}
+
 #header {
-    background-color: green;
-    color: #fff;
+    font-family: 'Press Start 2P', cursive;
     font-size: 28px;
     font-weight: bold;
-    margin: 15px 0 15px 15px;
-    padding: 30px 20px;
-    width: 220px;
+    padding: 20px;
+}
+
+#logo img {
+    height: 125px;
 }
 
 #instructions {
-    background-color: goldenrod;
-    color: #000;
     font-size: 18px;
-    margin: 15px 0 15px 15px;
-    padding: 30px 20px;
-    width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    width: 60%;
 }
 
 #goalScore {
-    background-color: rgb(99, 67, 0);
-    color: #fff;
-    float: left;
     font-size: 22px;
     font-weight: bold;
-    margin: 15px 0 15px 15px;
-    padding: 30px 20px;
+    padding-top: 0;
 }
 
 #record {
-    background-color:  rgb(156, 26, 3);
-    color: #fff;
     display: inline-block;
     font-size: 20px;
-    margin: 15px 0 15px 15px;
-    padding: 21px 20px;
-    width: 100px;
 }
 
 #totalScore {
-    background-color:  rgb(22, 1, 99);
-    color: #fff;
     display: inline-block;
     font-size: 20px;
-    margin-left: 15px;
     padding: 20px 20px;
-    width: 350px;
 }
 
 
 
 .red-button img {
-    height: 150px;
+    height: 130px;
     width: 85px;
 }
 
 .blue-button img {
-    height: 150px;
+    height: 130px;
     width: 85px;
 }
 
 .yellow-button img{
-    height: 150px;
+    height: 130px;
     width: 85px;
 }
 
 .green-button img {
-    height: 150px;
+    height: 130px;
     width: 85px;
 }
 
 .btn {
-    background-color: #4aaaa5;
+    background: #FFFFFF;
     border: none;
     font-size: 0;
 }
@@ -81,8 +76,7 @@
     margin-left: 15px;
 }
 
-
-
 body {
-    background-color: #4aaaa5;
+    background-color: #FFFFFF;
+    font-family: 'Acme', sans-serif;
 }

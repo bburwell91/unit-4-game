@@ -16,6 +16,9 @@ $(document).ready(function() {
   var greenButtonValue = 0;
   var totalScore = 0;
   var goalScoreValue = 0;
+  var rupeeSnd = new Audio("assets/sounds/LOZ_Get_Rupee.wav");
+  var winSnd = new Audio("assets/sounds/OOT_Fanfare_Item.wav");
+  var lossSnd = new Audio("assets/sounds/OOT_YoungLink_Scream1.wav");
 
 // set your wins and losses at zero
   $("#wins").text("Wins: " + winCount);
@@ -36,12 +39,12 @@ $(document).ready(function() {
     $('.blue-button').html(blueButtonValue);
     $('.yellow-button').html(yellowButtonValue);
     $('.green-button').html(greenButtonValue);
-    $('#goalScore').html(goalScoreValue);
+    $('#goalScore').html("Goal Score: " + goalScoreValue);
 
-    $('.red-button').append("<img src=assets/images/red-rupee.png>");
-    $('.blue-button').append("<img src=assets/images/blue-rupee.png>");
-    $('.yellow-button').append("<img src=assets/images/yellow-rupee.png>");
-    $('.green-button').append("<img src=assets/images/green-rupee.png>");
+    $('.red-button').append("<img src=assets/images/red-rupees.png>");
+    $('.blue-button').append("<img src=assets/images/blue-rupees.png>");
+    $('.yellow-button').append("<img src=assets/images/orange-rupees.png>");
+    $('.green-button').append("<img src=assets/images/green-rupees.png>");
 
     console.log(redButtonValue);
     console.log(blueButtonValue);
@@ -59,6 +62,7 @@ randomizeFunction();
 
 // button functions
   $(".red-button").on("click", function() {
+    rupeeSnd.play();
     totalScore += redButtonValue;
     $("#totalScore").html("Your total score is: " + totalScore);
       if (totalScore === goalScoreValue) {
@@ -72,6 +76,7 @@ randomizeFunction();
   });
 
   $(".blue-button").on("click", function() {
+    rupeeSnd.play();
     totalScore += blueButtonValue;
     $("#totalScore").html("Your total score is: " + totalScore);
     if (totalScore === goalScoreValue) {
@@ -85,6 +90,7 @@ randomizeFunction();
   });
 
   $(".yellow-button").on("click", function() {
+    rupeeSnd.play();
     totalScore += yellowButtonValue;
     $("#totalScore").html("Your total score is: " + totalScore);
     if (totalScore === goalScoreValue) {
@@ -98,6 +104,7 @@ randomizeFunction();
   });
 
   $(".green-button").on("click", function() {
+    rupeeSnd.play();
     totalScore += greenButtonValue;
     $("#totalScore").html("Your total score is: " + totalScore);
     if (totalScore === goalScoreValue) {
@@ -116,6 +123,7 @@ function wonGame() {
   winCount++;
   $("#wins").html("Wins: " + winCount);
   $("#message").html("YOU WIN!!!");
+  winSnd.play();
   redButtonValue = 0;
   blueButtonValue = 0;
   yellowButtonValue = 0;
@@ -129,6 +137,7 @@ function lostGame() {
   lossCount++;
   $("#losses").html("Losses: " + lossCount);
   $("#message").html("YOU LOST!!!");
+  lossSnd.play();
   redButtonValue = 0;
   blueButtonValue = 0;
   yellowButtonValue = 0;
@@ -140,7 +149,8 @@ function lostGame() {
 
 
 // text on page
-  $('#header').text("Rupee Collector!");
-  $('#instructions').text("You will be given a random number at the start of the game. There are four rupees below. By clicking on a rupee you will add a specific amount of points to your total score. You win the game by matching your total score to random Number, you lose the game if your total score goes above the random number. The value of each rupee is hidden from you until you click on it. Each time when the game starts, the game will change the values of each rupee.");
+  $('#header').text("The Legend of Zelda");
+  $('#logo').append("<img src=assets/images/original.gif>");
+  $('#instructions').text("Turn your volume up for a better experience. You will be given a random number at the start of the game. There are four rupees below. By clicking on a rupee you will add a specific amount of points to your total score. You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. The value of each rupee is hidden from you. Each time when the game starts, the game will change the values of each rupee.");
   $('#totalScore').text("Your total score is: " + totalScore);
 });

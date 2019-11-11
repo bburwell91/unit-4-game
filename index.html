@@ -2,33 +2,34 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>The Rupee Collector Game!</title>
+    <title>Legend of Zelda Rupee Collector!</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Jomolhari|Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div id="container">
+      <h1 id="header"></h1>
+      <div id="logo"></div>
+      <div id="instructions"></div>
 
-    <h1 id="header"></h1>
-    <div id="instructions"></div>
+      <div id="record">
+          <p id="message"></p>
+          <p id="wins"></p>
+          <p id="losses"></p>
+      </div>
 
-    <div id="goalScore"></div>
-    <div id="record">
-        <p id="message"></p>
-        <p id="wins"></p>
-        <p id="losses"></p>
+      <div id="btn-container">
+        <button class="red-button btn"></button>
+        <button class="blue-button btn"></button>
+        <button class="yellow-button btn"></button>
+        <button class="green-button btn"></button>
+      </div>
+
+      <div id="goalScore"></div>
+      <div id="totalScore"></div>
     </div>
-
-    <div id="btn-container">
-      <button class="red-button btn"><img src="assets/images/red-rupee.png"></button>
-      <button class="blue-button btn"><img src="assets/images/blue-rupee.png"></button>
-      <button class="yellow-button btn"><img src="assets/images/yellow-rupee.png"></button>
-      <button class="green-button btn"><img src="assets/images/green-rupee.png"></button>
-    </div>
-
-    <div id="totalScoreHeader"></div>
-    <div id="totalScore"></div>
-
   </body>
 </html>
